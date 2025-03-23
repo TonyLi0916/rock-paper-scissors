@@ -6,6 +6,13 @@ const maxRounds = 5;
 const scores = document.querySelector("#scores");
 const resultsText = document.querySelector("#results-text");
 
+["rock", "paper", "scissors"].forEach(choice => {
+    const button = document.querySelector(`#${choice}`);
+    button.addEventListener("click", () => {
+        playRound(choice, getComputerChoice());
+    });
+});
+
 function getComputerChoice() {
     let decision = Math.random();
     if (decision < 0.34) {
@@ -125,16 +132,3 @@ function showFinalWinner() {
     }
     resultsText.appendChild(finalResult);
 }
-
-["rock", "paper", "scissors"].forEach(choice => {
-    const button = document.querySelector(`#${choice}`);
-    button.addEventListener("click", () => {
-        playRound(choice, getComputerChoice());
-    });
-});
-
-
-
-
-
-
