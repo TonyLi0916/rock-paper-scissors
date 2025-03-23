@@ -1,0 +1,23 @@
+* { 
+    background-color: #FFE4C4;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
